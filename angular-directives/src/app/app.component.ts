@@ -13,6 +13,6 @@ export class AppComponent {
     showSecretPassword() {
       this.passwordVisible = !this.passwordVisible;
       this.clicked++;
-      this.clicks.push(this.clicked);
+      this.clicks.push(new Date());
     }
 }
