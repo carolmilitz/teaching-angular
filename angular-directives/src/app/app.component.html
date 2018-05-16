@@ -11,3 +11,20 @@
     </div>
   </div>
 </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <a (click)="showSecretPassword()" class="btn btn-primary">Display details</a>
+      <p *ngIf="passwordVisible">Secret password = tuna</p>
+      <p>
+        <span
+            *ngFor="let click of clicks; let i = index"
+            [ngClass]="{white: i > 3}"
+            [ngStyle]="{'background-color': i > 3 ? 'blue' : ''}"
+         >{{ click + ',' }}</span>
+      <p>
+    </div>
+  </div>
+</div>
