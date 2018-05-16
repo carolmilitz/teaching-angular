@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styles: ['.white{color:#fff;}']
 })
 export class AppComponent {
   passwordVisible = false;
